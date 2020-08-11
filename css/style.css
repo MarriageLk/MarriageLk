@@ -1374,18 +1374,18 @@ a img.aligncenter {
 
 .btn-default-link {
     font-size: 13px;
-    color: #ff4d4d;
+    color: #d4b97f;
     font-weight: 500;
     text-transform: uppercase;
     letter-spacing: 0px;
-    border-bottom: 1px solid #ff4d4d;
+    border-bottom: 1px solid #d4b97f;
     padding-bottom: 1px;
 }
 
 .btn-default-link:hover {
-    color: #e93c3c;
+    color: #CAA962;
     text-decoration: none;
-    border-color: #e93c3c;
+    border-color: #CAA962;
 }
 
 /*------------------------------
@@ -2601,6 +2601,13 @@ img.grayscale:hover {
 .page-header-wall {
     border-bottom: transparent;
     background: url(../images/wall-header.jpg) no-repeat center;
+    background-size: cover;
+    min-height: 340px;
+}
+
+.page-header-blog {
+    border-bottom: transparent;
+    background: url(../images/blog-header.jpg) no-repeat center;
     background-size: cover;
     min-height: 340px;
 }
@@ -7477,7 +7484,7 @@ ul.comment-list:last-child {
 }
 
 .widget ul li a:hover {
-    color: #ff4d4d;
+    color: #d4b97f;
 }
 
 .widget-title {
@@ -7534,7 +7541,7 @@ ul.comment-list:last-child {
 }
 
 .widget-tags a:hover {
-    background-color: #ff4d4d;
+    background-color: #CAA962;
     color: #fff !important;
     transition: .5s ease;
 }
