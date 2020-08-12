@@ -2606,10 +2606,10 @@ img.grayscale:hover {
 }
 
 .page-header-blog {
-    border-bottom: transparent;
+    /*border-bottom: transparent;
     background: url(../images/blog-header.jpg) no-repeat center;
     background-size: cover;
-    min-height: 340px;
+    min-height: 340px;*/
 }
 
 .page-breadcrumb {
@@ -7083,7 +7083,7 @@ sup {
 10. Blog Pages
 -------------------------------------------------------------------*/
 .post-pageheader {
-    background: url(../images/post-single-img-1.jpg) no-repeat center;
+    /*background: url(../images/post-single-img-1.jpg) no-repeat center;*/
     background-size: cover;
 }
 
