@@ -1465,7 +1465,7 @@ a img.aligncenter {
     border-radius: 4px;
     padding: 12px 10px;
     border: 1px solid #ebebeb;
-    color: #ff4d4d;
+    color: #CAA962;
     font-size: 13px;
     font-weight: 500;
     text-transform: uppercase;
@@ -2848,8 +2848,8 @@ img.grayscale:hover {
 
 .list-single-carousel .owl-theme .owl-dots .owl-dot.active span,
 .owl-theme .owl-dots .owl-dot:hover span {
-    background: #ff4d4d;
-    border-color: #ff4d4d;
+    background: #CAA962;
+    border-color: #CAA962;
 }
 
 /* ==========================================================================
