@@ -7997,7 +7997,7 @@ ul.comment-list:last-child {
 
 .notification-icon {
     display: inline-block;
-    color: #ff4d4d;
+    color: #CAA962;
     line-height: 2.3;
 }
 
@@ -8084,7 +8084,7 @@ ul.comment-list:last-child {
 }
 
 .notification-list-user-name {
-    color: #ff4d4d;
+    color: #CAA962;
     font-size: 14px;
     margin-right: 8px;
 }
@@ -8097,7 +8097,7 @@ ul.comment-list:last-child {
     padding: 10px 0px;
     line-height: 1.5;
     font-weight: 700;
-    background-color: #ff4d4d;
+    background-color: #CAA962;
     border-bottom-left-radius: 3px;
     border-bottom-right-radius: 3px;
 }
@@ -8256,12 +8256,12 @@ ul.comment-list:last-child {
 }
 
 .dashboard-nav ul li a:hover {
-    color: #ff4d4d;
+    color: #d4b97f;
     /* background-color: #ffe9e9; */
 }
 
 .dashboard-nav ul li.active a {
-    color: #ff4d4d;
+    color: #CAA962;
     /* background-color: #ffe9e9; */
 }
 
@@ -8341,7 +8341,7 @@ ul.comment-list:last-child {
 
 .dropdown-item:focus,
 .dropdown-item:hover {
-    color: #ff4d4d;
+    color: #d4b97f;
     background-color: #ffe9e9;
     text-decoration: none;
 }
@@ -8410,7 +8410,7 @@ ul.comment-list:last-child {
 
 .summary-icon {
     font-size: 50px;
-    color: #ff4d4d;
+    color: #CAA962;
     display: inline-block;
     float: right;
     line-height: 1.5;
@@ -9452,13 +9452,13 @@ input:checked + .slider {
 .dropdown-item:hover {
     color: #4955ef;
     text-decoration: none;
-    background-color: #eeeffd;
+    background-color: #d4b97f;
     border-radius: 4px;
 }
 
 .dropdown-item:focus .dropdown-toggle::after,
 .dropdown-item:hover.dropdown-toggle::after {
-    color: #ff4d4d;
+    color: #d4b97f;
 }
 
 @media(min-width:992px) {
@@ -9555,9 +9555,9 @@ input:checked + .slider {
 
 .dropdown-item:focus,
 .dropdown-item:hover {
-    color: #ff4d4d;
+    color: #CAA962;
     text-decoration: none;
-    background-color: #ffefef;
+    background-color: #fff9ed;
     border-radius: 4px;
 }
 
@@ -10588,4 +10588,8 @@ input:checked + .slider {
 .comment-list-off {
     margin-bottom: 30px;
     padding-bottom: 20px;
+}
+
+.white-text {
+    color: white !important;
 }
