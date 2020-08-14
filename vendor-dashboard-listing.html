@@ -171,29 +171,42 @@
                                             <input id="title" name="title" type="text" placeholder="Title" class="form-control ">
                                         </div>
                                     </div>
-                                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                                    <div class="col-xl-12 col-lg-12 col-md-6 col-sm-12 col-12">
                                         <!-- Select Basic -->
                                         <div class="form-group">
                                             <label class="control-label" for="Category">Category</label>
                                             <select class="wide" id="Category">
-                                                <option value="Select Category">Select Category</option>
-                                                <option value="Hotel">Hotel</option>
-                                                <option value="Restaurant">Restaurant</option>
-                                                <option value="Castle">Castle</option>
-                                                <option value="Barns">Barns</option>
-                                                <option value="Resort">Resort</option>
-                                                <option value="Church">Church</option>
-                                                <option value="In Door">In Door</option>
-                                                <option value="">Florist</option>
-                                                <option value="">Dj</option>
-                                                <option value="">Cake</option>
+                                                <option value="" disabled selected hidden>Vendor Type</option>
+                                                <option value="Beauticians & Hair Dressers">Beauticians & Hair Dressers</option>
+                                                <option value="Bridal Wear">Bridal Wear</option>
+                                                <option value="Catering services">Catering services</option>
+                                                <option value="Music Bands">Music Bands</option>
+                                                <option value="Florists">Florists</option>
+                                                <option value="Grooms Wear">Grooms Wear</option>
+                                                <option value="Banquet Halls">Banquet Halls</option>
+                                                <option value="Bridal Jewellery">Bridal Jewellery</option>
+                                                <option value="Cake Structures">Cake Structures</option>
+                                                <option value="Wedding Stationery">Wedding Stationery</option>
+                                                <option value="Vehicle Hires">Vehicle Hires</option>
+                                                <option value="Wedding Gifts">Wedding Gifts</option>
+                                                <option value="Photography">Photography</option>
+                                                <option value="Wedding Planners">Wedding Planners</option>
+                                                <option value="Travel Agents">Travel Agents</option>
+                                                <option value="Ashtaka & Jayamangala Gatha">Ashtaka & Jayamangala Gatha</option>
+                                                <option value="Bridal Mehendi">Bridal Mehendi</option>
+                                                <option value="Cinematography">Cinematography</option>
+                                                <option value="Dancing Troupes">Dancing Troupes</option>
+                                                <option value="Decorative Accessories">Decorative Accessories</option>
+                                                <option value="DJ">DJ</option>
+                                                <option value="Honeymoon Destinations">Honeymoon Destinations</option>
+                                                <option value="Honeymoon Wear">Honeymoon Wear</option>
+                                                <option value="Pre-Shoot Locations">Pre-Shoot Locations</option>
+                                                <option value="Sweets and Chocolates">Sweets and Chocolates</option>
+                                                <option value="Traditional Bridal Jewellery">Traditional Bridal Jewellery</option>
+                                                <option value="Wedding Cakes">Wedding Cakes</option>
+                                                <option value="Wedding Decorations">Wedding Decorations</option>
+
                                             </select>
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
-                                        <div class="form-group">
-                                            <label class="control-label" for="seat">Seat Capacity</label>
-                                            <input id="seat" name="seat" type="number" placeholder="e.g. 50" class="form-control ">
                                         </div>
                                     </div>
                                     <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
@@ -212,9 +225,16 @@
                                         <div class="form-group">
                                             <label class="control-label" for="city">City</label>
                                             <select class="wide" id="city">
-                                                <option value="Ahmedabad">Ahmedabad</option>
-                                                <option value="Baroda">Baroda</option>
-                                                <option value="Bharuch">Bharuch</option>
+                                                <option value="City" data-display="City">City</option>
+                                                <option value="Kandy">Kandy</option>
+                                                <option value="Colombo">Colombo</option>
+                                                <option value="	Galle">Galle</option>
+                                                <option value="Ratnapura">Ratnapura</option>
+                                                <option value="Kurunegala">Kurunegala</option>
+                                                <option value="Jaffna">Jaffna</option>
+                                                <option value="Anuradhapura">Anuradhapura</option>
+                                                <option value="Badulla">Badulla</option>
+                                                <option value="Trincomalee">Trincomalee</option>
                                             </select>
                                         </div>
                                     </div>
@@ -224,8 +244,8 @@
                                             <input id="postcode" name="postcode" type="text" placeholder="" class="form-control">
                                         </div>
                                     </div>
-                                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
-                                        <!-- Select Basic -->
+                                    <!-- <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                                        <!-- Select Basic 
                                         <div class="form-group">
                                             <label class="control-label" for="state">Select State</label>
                                             <select class="wide" id="state">
@@ -236,7 +256,7 @@
                                         </div>
                                     </div>
                                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
-                                        <!-- Select Basic -->
+                                        <!-- Select Basic
                                         <div class="form-group">
                                             <label class="control-label" for="country">Select Country</label>
                                             <select class="wide" id="country">
@@ -245,7 +265,7 @@
                                                 <option value="UK">UK</option>
                                             </select>
                                         </div>
-                                    </div>
+                                    </div>-->
                                     <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                                         <div class="form-group">
                                             <label class="control-label" for="summernote">Descriptions </label>
@@ -283,63 +303,125 @@
                             <div class="aminities-form-info card-body border-top">
                                 <div class="row">
                                     <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-                                        <h3>Amenities</h3>
+                                        <h3>Packages</h3>
 
                                     </div>
                                     <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12">
-                                        <div class="custom-control custom-checkbox">
-                                            <input type="checkbox" class="custom-control-input" id="customCheck1">
-                                            <label class="custom-control-label" for="customCheck1"> Groom Lounge</label>
-                                        </div>
-                                        <div class="custom-control custom-checkbox">
-                                            <input type="checkbox" class="custom-control-input" id="customCheck2">
-                                            <label class="custom-control-label" for="customCheck2"> Bridal Suite</label>
-                                        </div>
-                                        <div class="custom-control custom-checkbox">
-                                            <input type="checkbox" class="custom-control-input" id="customCheck3">
-                                            <label class="custom-control-label" for="customCheck3">Table and chairs</label>
-                                        </div>
-                                        <div class="custom-control custom-checkbox">
-                                            <input type="checkbox" class="custom-control-input" id="customCheck4">
-                                            <label class="custom-control-label" for="customCheck4"> Get Ready Rooms</label>
-                                        </div>
-                                        <div class="custom-control custom-checkbox">
-                                            <input type="checkbox" class="custom-control-input" id="customCheck5">
-                                            <label class="custom-control-label" for="customCheck5">Event Rentals</label>
-                                        </div>
-                                        <div class="custom-control custom-checkbox">
-                                            <input type="checkbox" class="custom-control-input" id="customCheck6">
-                                            <label class="custom-control-label" for="customCheck6">Outside Vendors</label>
-                                        </div>
-                                        <div class="custom-control custom-checkbox">
-                                            <input type="checkbox" class="custom-control-input" id="customCheck7">
-                                            <label class="custom-control-label" for="customCheck7"> Bar Services</label>
-                                        </div>
-                                        <div class="custom-control custom-checkbox">
-                                            <input type="checkbox" class="custom-control-input" id="customCheck8">
-                                            <label class="custom-control-label" for="customCheck8"> Catering Services</label>
+                                        <div class="form-group">
+                                            <label class="control-label" for="postcode">Package Name</label>
+                                            <input id="postcode" name="postcode" type="text" placeholder="" class="form-control">
                                         </div>
                                     </div>
                                     <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12">
-                                        <div class="custom-control custom-checkbox">
-                                            <input type="checkbox" class="custom-control-input" id="customCheck9">
-                                            <label class="custom-control-label" for="customCheck9"> Clean Up</label>
+                                        <div class="form-group">
+                                            <label class="control-label" for="postcode">Description</label>
+                                            <input id="postcode" name="postcode" type="text" placeholder="" class="form-control">
                                         </div>
-                                        <div class="custom-control custom-checkbox">
-                                            <input type="checkbox" class="custom-control-input" id="customCheck10">
-                                            <label class="custom-control-label" for="customCheck10">Event Planner</label>
+                                    </div>
+                                    <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12">
+                                        <div class="form-group">
+                                            <label class="control-label" for="postcode">Price (Rs)</label>
+                                            <input id="postcode" name="postcode" type="text" placeholder="" class="form-control">
                                         </div>
-                                        <div class="custom-control custom-checkbox">
-                                            <input type="checkbox" class="custom-control-input" id="customCheck11">
-                                            <label class="custom-control-label" for="customCheck11">Wifi</label>
+                                    </div>
+                                    <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12">
+                                        <div class="form-group">
+                                            <a href="#" class="btn btn-primary">Add</a>
                                         </div>
-                                        <div class="custom-control custom-checkbox">
-                                            <input type="checkbox" class="custom-control-input" id="customCheck12">
-                                            <label class="custom-control-label" for="customCheck12">Pet Friendly</label>
-                                        </div>
-                                        <div class="custom-control custom-checkbox">
-                                            <input type="checkbox" class="custom-control-input" id="customCheck13">
-                                            <label class="custom-control-label" for="customCheck13">Accommodations</label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                        <div id="accordionsimple">
+                                            <!-- accordion-card -->
+                                            <div class="accordion-card card">
+                                                <div class="accordion-card-header active" id="headingEleven">
+                                                    <h5 class="mb-0">
+                                                        <a role="button" href="#" class="accordion-card-title collapsed" data-toggle="collapse" data-target="#collapseEleven" aria-expanded="false" aria-controls="collapseEleven">
+                                                            Basic(Rs. 1500/=)</a>
+                                                        <a href="#" class="btn btn-primary  btn-sm float-right text-white m-1">Edit</a>
+                                                        <a href="#" class="btn btn-primary  btn-sm float-right text-white m-1">Delete</a>
+                                                    </h5>
+
+                                                </div>
+                                                <div id="collapseEleven" class="collapse" aria-labelledby="headingOne" data-parent="#accordionsimple" style="">
+                                                    <div class="card-body">
+                                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. gs occaecat craft.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- /.accordion-card -->
+                                            <!-- accordion-card -->
+                                            <div class="accordion-card card">
+                                                <div class="accordion-card-header" id="headingTwelve">
+                                                    <h5 class="mb-0">
+                                                        <a role="button" href="#" class="accordion-card-title" data-toggle="collapse" data-target="#collapseTwelve" aria-expanded="false" aria-controls="collapseTwelve">
+                                                            Basic(Rs. 1500/=)
+                                                        </a>
+                                                        <a href="#" class="btn btn-primary  btn-sm float-right text-white m-1">Edit</a>
+                                                        <a href="#" class="btn btn-primary  btn-sm float-right text-white m-1">Delete</a>
+                                                    </h5>
+                                                </div>
+                                                <div id="collapseTwelve" class="collapse" aria-labelledby="headingTwelve" data-parent="#accordionsimple">
+                                                    <div class="card-body">
+                                                        pidatat cred nesciunt sapiente ea proident. Ad vegan excepteur butcher viceLeggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- /.accordion-card -->
+                                            <!-- accordion-card -->
+                                            <div class="accordion-card card">
+                                                <div class="accordion-card-header" id="headingThirteen">
+                                                    <h5 class="mb-0">
+                                                        <a role="button" href="#" class="accordion-card-title" data-toggle="collapse" data-target="#collapseThirteen" aria-expanded="false" aria-controls="collapseThirteen">
+                                                            Basic(Rs. 1500/=)
+                                                        </a>
+                                                        <a href="#" class="btn btn-primary  btn-sm float-right text-white m-1">Edit</a>
+                                                        <a href="#" class="btn btn-primary  btn-sm float-right text-white m-1">Delete</a>
+                                                    </h5>
+                                                </div>
+                                                <div id="collapseThirteen" class="collapse" aria-labelledby="headingThirteen" data-parent="#accordionsimple">
+                                                    <div class="card-body">
+                                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat you probably haven't heard of them accusamus.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--/. accordion-card -->
+                                            <!-- accordion-card -->
+                                            <div class="accordion-card card">
+                                                <div class="accordion-card-header" id="headingFourteen">
+                                                    <h5 class="mb-0">
+                                                        <a role="button" href="#" class="accordion-card-title" data-toggle="collapse" data-target="#collapseFourteen" aria-expanded="false" aria-controls="collapseFourteen">
+                                                            Basic(Rs. 1500/=)</a>
+                                                        <a href="#" class="btn btn-primary  btn-sm float-right text-white m-1">Edit</a>
+                                                        <a href="#" class="btn btn-primary  btn-sm float-right text-white m-1">Delete</a>
+                                                    </h5>
+                                                </div>
+                                                <div id="collapseFourteen" class="collapse" aria-labelledby="headingFourteen" data-parent="#accordionsimple">
+                                                    <div class="card-body">
+                                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat you probably haven't heard of them accusamus.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- /.accordion-card -->
+                                            <!-- accordion-card -->
+                                            <div class="accordion-card card">
+                                                <div class="accordion-card-header" id="headingFifteen">
+                                                    <h5 class="mb-0">
+                                                        <a role="button" href="#" class="accordion-card-title" data-toggle="collapse" data-target="#collapseFifteen" aria-expanded="false" aria-controls="collapseFifteen">
+                                                            Basic(Rs. 1500/=)
+                                                        </a>
+                                                        <a href="#" class="btn btn-primary  btn-sm float-right text-white m-1">Edit</a>
+                                                        <a href="#" class="btn btn-primary  btn-sm float-right text-white m-1">Delete</a>
+                                                    </h5>
+                                                </div>
+                                                <div id="collapseFifteen" class="collapse" aria-labelledby="headingFifteen" data-parent="#accordionsimple">
+                                                    <div class="card-body">
+                                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat you probably haven't heard of them accusamus.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- /.accordion-card -->
                                         </div>
                                     </div>
                                 </div>
@@ -455,78 +537,6 @@
                 <!-- End Add new Listing-->
                 <div class="dashboard-vendor-list">
                     <ul class="list-unstyled">
-                        <li>
-                            <div class="dashboard-list-block">
-                                <div class="row">
-                                    <div class="col-xl-2 col-lg-4 col-md-12 col-sm-12 col-12">
-                                        <div class="dashboard-list-img"><a href="#"><img src="./images/dashboard-list-img-1.jpg" alt="" class="img-fluid"></a></div>
-                                    </div>
-                                    <div class="col-xl-7 col-lg-5 col-md-6 col-sm-12 col-12 ">
-                                        <div class="dashboard-list-content">
-                                            <h3 class="mb0"><a href="#" class="title">Wedding Venue Heading Title</a></h3>
-                                            <p>1006 Fantages Way Norway, ME 04268</p>
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-3 col-lg-3 col-md-12 col-sm-12 col-12">
-                                        <div class="dashboard-list-btn"><a href="#" class="btn btn-outline-violate btn-xs mr10">edit</a><a href="#" class="btn btn-outline-pink btn-xs ">delete</a></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="dashboard-list-block">
-                                <div class="row">
-                                    <div class="col-xl-2 col-lg-4 col-md-12 col-sm-12 col-12">
-                                        <div class="dashboard-list-img"><a href="#"><img src="./images/dashboard-list-img-2.jpg" alt="" class="img-fluid"></a></div>
-                                    </div>
-                                    <div class="col-xl-7 col-lg-5 col-md-6 col-sm-12 col-12">
-                                        <div class="dashboard-list-content">
-                                            <h3 class="mb0"><a href="#" class="title">Wedding Venue Heading Title</a></h3>
-                                            <p>4098 Robinson Court Lachine, MI 49753</p>
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-3 col-lg-3 col-md-12 col-sm-12 col-12 ">
-                                        <div class="dashboard-list-btn"><a href="#" class="btn btn-outline-violate btn-xs mr10">edit</a><a href="#" class="btn btn-outline-pink btn-xs ">delete</a></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="dashboard-list-block">
-                                <div class="row">
-                                    <div class="col-xl-2 col-lg-4 col-md-12 col-sm-12 col-12">
-                                        <div class="dashboard-list-img"><a href="#"><img src="./images/dashboard-list-img-3.jpg" alt="" class="img-fluid"></a></div>
-                                    </div>
-                                    <div class="col-xl-7 col-lg-5 col-md-7 col-sm-12 col-12">
-                                        <div class="dashboard-list-content">
-                                            <h3 class="mb0"><a href="#" class="title">Wedding Venue Heading Title</a></h3>
-                                            <p>3316 Java Lane Orangeburg, SC 29115</p>
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-3 col-lg-3 col-md-12 col-sm-12 col-12">
-                                        <div class="dashboard-list-btn"><a href="#" class="btn btn-outline-violate btn-xs mr10">edit</a><a href="#" class="btn btn-outline-pink btn-xs ">delete</a></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="dashboard-list-block">
-                                <div class="row">
-                                    <div class="col-xl-2 col-lg-4 col-md-12 col-sm-12 col-12">
-                                        <div class="dashboard-list-img"><a href="#"><img src="./images/dashboard-list-img-4.jpg" alt="" class="img-fluid"></a></div>
-                                    </div>
-                                    <div class="col-xl-7 col-lg-5 col-md-6 col-sm-12 col-12">
-                                        <div class="dashboard-list-content">
-                                            <h3 class="mb0"><a href="#" class="title">Wedding Venue Heading Title</a></h3>
-                                            <p>1006 Fantages Way Norway, ME 04268</p>
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-3 col-lg-3 col-md-12 col-sm-12 col-12">
-                                        <div class="dashboard-list-btn"><a href="#" class="btn btn-outline-violate btn-xs mr10">edit</a><a href="#" class="btn btn-outline-pink btn-xs ">delete</a></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
                         <li>
                             <div class="dashboard-list-block">
                                 <div class="row">
