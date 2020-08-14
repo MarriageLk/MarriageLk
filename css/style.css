@@ -6382,7 +6382,7 @@ sup {
 .accrodion-second-regular .card-title span {
     padding-top: 3px;
     font-size: 14px;
-    color: #ff4d4d;
+    color: #CAA962;
 }
 
 .accrodion-second-regular .card-header:first-child {
@@ -6394,7 +6394,7 @@ sup {
 }
 
 .accrodion-second-regular .card-header .card-title a:hover {
-    color: #ff4d4d !important;
+    color: #d4b97f !important;
 }
 
 .accrodion-second-regular .card-header.active {
