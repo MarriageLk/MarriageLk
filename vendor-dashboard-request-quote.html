@@ -30,7 +30,7 @@
 </head>
 
 <body class="body-bg">
-    <div class="dashboard-header">
+    <div class="dashboard-header bg-dark">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-xl-10 col-lg-8 col-md-8 col-sm-6 col-6">
@@ -92,9 +92,10 @@
                                 </li>
                                 <li class="nav-item dropdown dropleft user-vendor ">
                                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        <span class="user-icon"> <img src="./images/dashboard-profile.jpg" alt="" class="rounded-circle mb10"></span><span class="user-vendor-name">John Deo</span></a>
+                                        <span class="user-icon"> <img src="./images/dashboard-profile.jpg" alt="" class="rounded-circle mb10"></span><span class="user-vendor-name text-white">John Deo</span></a>
                                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                                         <a class="dropdown-item" href="vendor-dashboard-overview.html">Dashboard</a>
+                                        <a class="dropdown-item" href="vendor-dashboard-notification.html">Notification</a>
                                         <a class="dropdown-item" href="vendor-dashboard-listing.html"> My Listed Item </a>
                                         <a class="dropdown-item" href="vendor-dashboard-pricing.html">Pricing Plan</a>
                                         <a class="dropdown-item" href="vendor-dashboard-request-quote.html">Request Quotes</a>
@@ -126,7 +127,13 @@
             <div class="dashboard-nav">
                 <ul class="list-unstyled">
                     <li><a href="vendor-dashboard-overview.html"><span class="dash-nav-icon"><i class="fas fa-compass"></i></span>Dashboard</a></li>
-                    <li><a href="vendor-dashboard-listing.html"><span class="dash-nav-icon"><i class="fas fa-list-alt"></i> </span> My Listed Item </a></li>
+                    <li><a href="vendor-dashboard-notification.html"><span class="dash-nav-icon"><i class="fa fa-bell" aria-hidden="true"></i>
+                            </span>Notifications</a></li>
+                    <li><a href="chat.html"><span class="dash-nav-icon"><i class="fa fa-envelope" aria-hidden="true"></i>
+                            </span> Messages </a>
+                    <li><a href="vendor-dashboard-posts.html"><span class="dash-nav-icon"><i class="fa fa-share-alt" aria-hidden="true"></i>
+                            </span> Posts </a>
+                    <li><a href="vendor-dashboard-listing.html"><span class="dash-nav-icon"><i class="fas fa-list-alt"></i> </span> My Listed Item </a>
                     <li><a href="vendor-dashboard-pricing.html"><span class="dash-nav-icon"><i class="fas fa-calculator"></i></span>Pricing Plan</a></li>
                     <li class="active"><a href="vendor-dashboard-request-quote.html"><span class="dash-nav-icon"><i class="fas fa-edit"></i></span>Request Quotes</a></li>
                     <li><a href="vendor-dashboard-reviews.html"><span class="dash-nav-icon"><i class="fas fa-comments"></i></span>Reviews </a></li>
@@ -168,7 +175,7 @@
                                         <th>Name</th>
                                         <th>Wedding Date</th>
                                         <th>Email</th>
-                                        <th>Phone</th>
+                                        <th>Package</th>
                                         <th>Action</th>
                                     </tr>
                                 </thead>
@@ -177,33 +184,130 @@
                                         <td class="requester-name">Jessica J. Titus</td>
                                         <td class="wedding-date">26/10/2020</td>
                                         <td class="requester-id">jessicatitus@gmail.com</td>
-                                        <td class="requester-phone">00000000</td>
-                                        <td class="requester-action"><a href="#" class="btn btn-outline-pink btn-xs ">delete</a></td>
+                                        <td class="requester-id">Basic</td>
+                                        <td class="requester-action">
+                                            <a href="#" class="btn btn-outline-pink btn-xs m-1" data-toggle="modal" data-target="#viewQuote">View</a>
+                                            <a href="#" class="btn btn-outline-pink btn-xs" data-toggle="modal" data-target="#delete">delete</a></td>
+
                                     </tr>
                                     <tr>
                                         <td class="requester-name">Anita Parmar</td>
                                         <td class="wedding-date">26/11/2020</td>
                                         <td class="requester-id">anita@gmail.com</td>
                                         <td class="requester-phone">111111111</td>
-                                        <td class="requester-action"><a href="#" class="btn btn-outline-pink btn-xs ">delete</a></td>
+                                        <td class="requester-action">
+                                            <a href="#" class="btn btn-outline-pink btn-xs m-1" data-toggle="modal" data-target="#viewQuote">View</a>
+                                            <a href="#" class="btn btn-outline-pink btn-xs" data-toggle="modal" data-target="#delete">delete</a></td>
+
                                     </tr>
                                     <tr>
                                         <td class="requester-name">Kim R. Wiley</td>
                                         <td class="wedding-date">26/12/2020</td>
                                         <td class="requester-id">kim@gmail.com</td>
                                         <td class="requester-phone">22222222</td>
-                                        <td class="requester-action"><a href="#" class="btn btn-outline-pink btn-xs">delete</a></td>
-                                    </tr>
-                                    <tr>
-                                        <td class="requester-name">Betty L. Plain</td>
-                                        <td class="wedding-date">28/12/2020</td>
-                                        <td class="requester-id">plain@gmail.com</td>
-                                        <td class="requester-phone">333333333 </td>
-                                        <td class="requester-action"><a href="#" class="btn btn-outline-pink btn-xs">delete</a></td>
+                                        <td class="requester-action">
+                                            <a href="#" class="btn btn-outline-pink btn-xs m-1" data-toggle="modal" data-target="#viewQuote">View</a>
+                                            <a href="#" class="btn btn-outline-pink btn-xs" data-toggle="modal" data-target="#delete">delete</a></td>
+
                                     </tr>
                                 </tbody>
                             </table>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="viewQuote" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLongTitle">View Quote</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="">
+                                                <form>
+                                                    <!-- Form Name -->
+                                                    <div class="venue-form-info card-body">
+                                                        <div class="row">
+
+                                                            <!-- Text input-->
+                                                            <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                                                                <div class="form-group">
+                                                                    <label class="control-label" for="title">Title</label>
+                                                                    <input id="title" name="title" type="text" placeholder="Title" class="form-control " disabled>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                                                                <div class="form-group">
+                                                                    <label class="control-label">Wedding Date</label>
+                                                                    <input id="date" name="date" type="text" placeholder="Date" class="form-control " disabled>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                                                                <div class="form-group">
+                                                                    <label class="control-label">Email </label>
+                                                                    <input id="email" name="email" type="text" placeholder="Email" class="form-control " disabled>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                                                                <div class="form-group">
+                                                                    <label class="control-label">Phone</label>
+                                                                    <input id="phone" name="phone" type="text" placeholder="Phone" class="form-control" disabled>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                                                                <div class="form-group">
+                                                                    <label class="control-label">Package</label>
+                                                                    <input id="package" name="package" type="text" placeholder="Package" class="form-control" disabled>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                                                                <div class="form-group">
+                                                                    <label class="control-label">Price</label>
+                                                                    <input id="price" name="price" type="number" placeholder="Price" class="form-control">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                                                <div class="form-group">
+                                                                    <label class="control-label">Message </label>
+                                                                    <input id="message" name="message" type="text" placeholder="Message" class="form-control " disabled>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-default">Accept</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Modal -->
+                            <div class="modal fade" id="delete" tabindex="-1" role="dialog" aria-labelledby="delete" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Delete</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>Are you sure want to delete?</p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-danger">Delete</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
+
                     </div>
                 </div>
             </div>

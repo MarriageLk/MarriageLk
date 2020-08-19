@@ -6,11 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>RealWed | Vendor Dashboard - Profile</title>
+    <title>Marriage.lk | Vendor Dashboard - Profile</title>
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Rubik:300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Rubik:300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
     <!-- FontAwesome icon -->
     <link href="fontawesome/css/fontawesome-all.css" rel="stylesheet">
     <!-- Fontello icon -->
@@ -30,7 +30,7 @@
 </head>
 
 <body class="body-bg">
-   <div class="dashboard-header">
+    <div class="dashboard-header bg-dark">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-xl-10 col-lg-8 col-md-8 col-sm-6 col-6">
@@ -92,15 +92,18 @@
                                 </li>
                                 <li class="nav-item dropdown dropleft user-vendor ">
                                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        <span class="user-icon"> <img src="./images/dashboard-profile.jpg" alt="" class="rounded-circle mb10"></span><span class="user-vendor-name">John Deo</span></a>
+                                        <span class="user-icon"> <img src="./images/dashboard-profile.jpg" alt="" class="rounded-circle mb10"></span><span class="user-vendor-name text-white">John Deo</span></a>
                                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                              <a class="dropdown-item" href="vendor-dashboard-overview.html">Dashboard</a>
-                                <a class="dropdown-item" href="vendor-dashboard-listing.html"> My Listed Item </a>
-                                <a class="dropdown-item" href="vendor-dashboard-pricing.html">Pricing Plan</a>
-                                <a class="dropdown-item" href="vendor-dashboard-request-quote.html">Request Quotes</a>
-                                <a class="dropdown-item" href="vendor-dashboard-reviews.html">Reviews </a>
-                                <a class="dropdown-item" href="vendor-dashboard-profile.html">My Profile </a>
-                                <a class="dropdown-item" href="index.html">Log Out</a>
+                                        <a class="dropdown-item" href="vendor-dashboard-overview.html">Dashboard</a>
+                                        <a class="dropdown-item" href="vendor-dashboard-notification.html">Notification</a>
+                                        <a class="dropdown-item" href="chat.html">Message</a>
+                                        <a class="dropdown-item" href="vendor-dashboard-posts.html">Post</a>
+                                        <a class="dropdown-item" href="vendor-dashboard-listing.html"> My Listed Item </a>
+                                        <a class="dropdown-item" href="vendor-dashboard-pricing.html">Pricing Plan</a>
+                                        <a class="dropdown-item" href="vendor-dashboard-request-quote.html">Request Quotes</a>
+                                        <a class="dropdown-item" href="vendor-dashboard-reviews.html">Reviews </a>
+                                        <a class="dropdown-item" href="vendor-dashboard-profile.html">My Profile </a>
+                                        <a class="dropdown-item" href="index.html">Log Out</a>
                                     </div>
                                 </li>
                             </ul>
@@ -126,7 +129,13 @@
             <div class="dashboard-nav">
                 <ul class="list-unstyled">
                     <li><a href="vendor-dashboard-overview.html"><span class="dash-nav-icon"><i class="fas fa-compass"></i></span>Dashboard</a></li>
-                    <li><a href="vendor-dashboard-listing.html"><span class="dash-nav-icon"><i class="fas fa-list-alt"></i> </span> My Listed Item </a></li>
+                    <li><a href="vendor-dashboard-notification.html"><span class="dash-nav-icon"><i class="fa fa-bell" aria-hidden="true"></i>
+                            </span>Notifications</a></li>
+                    <li><a href="chat.html"><span class="dash-nav-icon"><i class="fa fa-envelope" aria-hidden="true"></i>
+                            </span> Messages </a>
+                    <li><a href="vendor-dashboard-posts.html"><span class="dash-nav-icon"><i class="fa fa-share-alt" aria-hidden="true"></i>
+                            </span> Posts </a>
+                    <li><a href="vendor-dashboard-listing.html"><span class="dash-nav-icon"><i class="fas fa-list-alt"></i> </span> My Listed Item </a>
                     <li><a href="vendor-dashboard-pricing.html"><span class="dash-nav-icon"><i class="fas fa-calculator"></i></span>Pricing Plan</a></li>
                     <li><a href="vendor-dashboard-request-quote.html"><span class="dash-nav-icon"><i class="fas fa-edit"></i></span>Request Quotes</a></li>
                     <li><a href="vendor-dashboard-reviews.html"><span class="dash-nav-icon"><i class="fas fa-comments"></i></span>Reviews </a></li>
@@ -335,23 +344,24 @@
     <script src="js/menumaker.min.js"></script>
     <script src="js/custom-script.js"></script>
     <script>
-    $(document).ready(function() {
-        $.uploadPreview({
-            input_field: "#image-upload", // Default: .image-upload
-            preview_box: "#image-preview", // Default: .image-preview
-            label_field: "#image-label", // Default: .image-label
-            label_default: "Choose File", // Default: Choose File
-            label_selected: "Change File", // Default: Change File
-            no_label: false // Default: false
+        $(document).ready(function() {
+            $.uploadPreview({
+                input_field: "#image-upload", // Default: .image-upload
+                preview_box: "#image-preview", // Default: .image-preview
+                label_field: "#image-label", // Default: .image-label
+                label_default: "Choose File", // Default: Choose File
+                label_selected: "Change File", // Default: Change File
+                no_label: false // Default: false
+            });
         });
-    });
+
     </script>
     <script src="js/jquery.uploadPreview.js"></script>
-   
+
     <script src="js/summernote-bs4.js"></script>
     <script src="js/offcanvas.js"></script>
-     <script src="js/jquery.slimscroll.js"></script>
-    
+    <script src="js/jquery.slimscroll.js"></script>
+
 </body>
 
 </html>
