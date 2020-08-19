@@ -7959,7 +7959,7 @@ ul.comment-list:last-child {
 }
 
 .db-nav-list .navbar-nav .nav-item {
-    border-left: 1px solid #e8e8e8;
+    /*border-left: 1px solid #e8e8e8;*/
 }
 
 .db-nav-list .navbar-nav .nav-item .nav-link {
