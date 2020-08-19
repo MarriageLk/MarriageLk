@@ -26,6 +26,90 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <link href='Calendar/main.css' rel='stylesheet' />
+    <script src='Calendar/main.js'></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var calendarEl = document.getElementById('calendar');
+
+            var calendar = new FullCalendar.Calendar(calendarEl, {
+                headerToolbar: {
+                    left: 'prevYear,prev,next,nextYear today',
+                    center: 'title',
+                    right: 'dayGridMonth,dayGridWeek,dayGridDay'
+                },
+                initialDate: '2020-06-12',
+                navLinks: true, // can click day/week names to navigate views
+                editable: true,
+                dayMaxEvents: true, // allow "more" link when too many events
+                events: [{
+                        title: 'All Day Event',
+                        start: '2020-06-01'
+                    },
+                    {
+                        title: 'Long Event',
+                        start: '2020-06-07',
+                        end: '2020-06-10'
+                    },
+                    {
+                        groupId: 999,
+                        title: 'Repeating Event',
+                        start: '2020-06-09T16:00:00'
+                    },
+                    {
+                        groupId: 999,
+                        title: 'Repeating Event',
+                        start: '2020-06-16T16:00:00'
+                    },
+                    {
+                        title: 'Conference',
+                        start: '2020-06-11',
+                        end: '2020-06-13'
+                    },
+                    {
+                        title: 'Meeting',
+                        start: '2020-06-12T10:30:00',
+                        end: '2020-06-12T12:30:00'
+                    },
+                    {
+                        title: 'Lunch',
+                        start: '2020-06-12T12:00:00'
+                    },
+                    {
+                        title: 'Meeting',
+                        start: '2020-06-12T14:30:00'
+                    },
+                    {
+                        title: 'Happy Hour',
+                        start: '2020-06-12T17:30:00'
+                    },
+                    {
+                        title: 'Dinner',
+                        start: '2020-06-12T20:00:00'
+                    },
+                    {
+                        title: 'Birthday Party',
+                        start: '2020-06-13T07:00:00'
+                    },
+                    {
+                        title: 'Click for Google',
+                        url: 'http://google.com/',
+                        start: '2020-06-28'
+                    }
+                ]
+            });
+
+            calendar.render();
+        });
+
+    </script>
+    <style>
+        #calendar {
+            width: 400px auto;
+            margin: 0;
+        }
+
+    </style>
 </head>
 
 <body class="body-bg">
@@ -95,8 +179,10 @@
                                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                                         <a class="dropdown-item" href="vendor-dashboard-overview.html">Dashboard</a>
                                         <a class="dropdown-item" href="vendor-dashboard-notification.html">Notification</a>
+                                        <a class="dropdown-item" href="vendor-dashboard-orders.html">Orders</a>
+                                        <a class="dropdown-item" href="vendor-dashboard-offers.html">Offers</a>
                                         <a class="dropdown-item" href="chat.html">Message</a>
-                                        <a class="dropdown-item" href="vendor-dashboard-post.html">Post</a>
+                                        <a class="dropdown-item" href="vendor-dashboard-posts.html">Post</a>
                                         <a class="dropdown-item" href="vendor-dashboard-listing.html"> My Listed Item </a>
                                         <a class="dropdown-item" href="vendor-dashboard-pricing.html">Pricing Plan</a>
                                         <a class="dropdown-item" href="vendor-dashboard-request-quote.html">Request Quotes</a>
@@ -130,6 +216,10 @@
                     <li class="active"><a href="vendor-dashboard-overview.html"><span class="dash-nav-icon"><i class="fas fa-compass"></i></span>Dashboard</a></li>
                     <li><a href="vendor-dashboard-notification.html"><span class="dash-nav-icon"><i class="fa fa-bell" aria-hidden="true"></i>
                             </span>Notifications</a></li>
+                    <li><a href="vendor-dashboard-orders.html"><span class="dash-nav-icon"><i class="fas fa-sort-amount-up"></i>
+                            </span>Orders</a></li>
+                    <li><a href="vendor-dashboard-offers.html"><span class="dash-nav-icon"><i class="fas fa-piggy-bank"></i>
+                            </span>Offers</a></li>
                     <li><a href="chat.html"><span class="dash-nav-icon"><i class="fa fa-envelope" aria-hidden="true"></i>
                             </span> Messages </a>
                     <li><a href="vendor-dashboard-posts.html"><span class="dash-nav-icon"><i class="fa fa-share-alt" aria-hidden="true"></i>
@@ -150,7 +240,7 @@
                         <div class="dashboard-page-header">
 
                             <h3 class="dashboard-page-title">Hi, Vendor.</h3>
-                            <p class="d-block">Here’s what’s happening with your wedding venue business today.</p>
+                            <p class="d-block">Here’s what’s happening with your wedding business today.</p>
                         </div>
                     </div>
                 </div>
@@ -195,6 +285,17 @@
                         </div>
                     </div>
                 </div>
+                <div class="row mt-5">
+                    <div class="col-xl-12 col-lg-10 col-md-9 col-sm-12 col-12">
+                        <div class="dashboard-page-header">
+
+                            <h3 class="dashboard-page-title">Event Calendar</h3>
+                            <!--<p class="d-block"></p>-->
+                        </div>
+                    </div>
+                </div>
+                <!--Calendar-->
+                <div id='calendar' class="mb-2 bg-white"></div>
             </div>
         </div>
     </div>
