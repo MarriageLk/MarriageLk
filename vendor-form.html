@@ -9,15 +9,17 @@
     <title>Marriage.lk | Welcome to Sri Lanka's No 1 Online Wedding Portal - Vendor Login</title>
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-   
+
     <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Rubik:300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Rubik:300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
     <!-- FontAwesome icon -->
     <link href="fontawesome/css/fontawesome-all.css" rel="stylesheet">
+    <!--jquery-ui  -->
+    <link href="css/jquery-ui.css" rel="stylesheet">
     <!-- Fontello icon -->
     <link href="fontello/css/fontello.css" rel="stylesheet">
-      <!-- Favicon icon -->
-     <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+    <!-- Favicon icon -->
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
     <!-- Style CSS -->
     <link href="css/style.css" rel="stylesheet">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -61,7 +63,7 @@
                                     <form>
                                         <div class="row">
                                             <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 ">
-                                               <!-- Text input-->
+                                                <!-- Text input-->
                                                 <div class="form-group">
                                                     <label class="control-label sr-only" for="bussinessname"></label>
                                                     <input id="bussinessname" type="text" name="bussiness name" placeholder="Bussiness Name" class="form-control" required>
@@ -75,21 +77,43 @@
                                                 </div>
                                             </div>
                                             <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 ">
-                                               <!-- Text input-->
+                                                <!-- Text input-->
                                                 <div class="form-group service-form-group">
                                                     <label class="control-label sr-only" for="email"></label>
                                                     <input id="email" type="email" placeholder="Email" class="form-control" required>
                                                 </div>
                                             </div>
                                             <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 ">
-                                              <!-- Text input-->
+                                                <!-- Text input-->
                                                 <div class="form-group service-form-group">
-                                                    <label class="control-label sr-only" for="passwordregister"></label>
+                                                    <label class="control-label sr-only"></label>
                                                     <input id="passwordregister" type="password" name="passwordregister" placeholder="Password" class="form-control" required>
                                                 </div>
                                             </div>
                                             <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 ">
-                                                <!-- select -->
+                                                <!-- Text input-->
+                                                <div class="form-group service-form-group">
+                                                    <label class="control-label sr-only"></label>
+                                                    <input id="identity" type="text" name="NIC" placeholder="NIC" class="form-control" required>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 ">
+                                                <!-- Text input-->
+                                                <div class="form-group service-form-group">
+                                                    <label class="control-label sr-only"></label>
+                                                    <input id="br" type="text" name="br" placeholder="Business Registration Number" class="form-control" required>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                                <!-- Text input-->
+                                                <div class="form-group">
+                                                    <label class="control-label sr-only" for="weddingdate">Started Date</label>
+                                                    <input id="startdate" name="startdate" type="text" placeholder="Started Date" class="form-control input-md" required="">
+                                                    <div class="venue-form-calendar"><i class="far fa-calendar-alt"></i></div>
+                                                </div>
+                                            </div>
+                                            <!--<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 ">
+                                                <!-- select 
                                                 <div class="form-group">
                                                     <select class="wide mb20" style="height: 10px!important">
                                                         <option value="Vendor Purpose">Vendor Purpose</option>
@@ -123,7 +147,7 @@
                                                         <option value="Wedding Decorations">Wedding Decorations</option>
                                                     </select>
                                                 </div>
-                                            </div>
+                                            </div>-->
                                             <!-- buttons -->
                                             <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 ">
                                                 <button type="submit" name="singlebutton" class="btn btn-default">Sign up</button>
@@ -145,13 +169,13 @@
                                     <form>
                                         <div class="row">
                                             <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 ">
-                                              <!-- Text input-->
+                                                <!-- Text input-->
                                                 <div class="form-group">
                                                     <label class="control-label sr-only" for="username"></label>
                                                     <input id="username" type="text" name="username" placeholder="User Name" class="form-control" required>
                                                 </div>
                                             </div>
-                                           <!-- Text input-->
+                                            <!-- Text input-->
                                             <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 ">
                                                 <div class="form-group service-form-group">
                                                     <label class="control-label sr-only" for="passwordlogin"></label>
@@ -175,16 +199,19 @@
         </div>
     </div>
     <!-- /.vendor-form -->
-  
+
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="js/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.nice-select.min.js"></script>
     <script src="js/fastclick.js"></script>
-   <script src="js/custom-script.js"></script>
+    <script src="js/custom-script.js"></script>
+    <!-- jquery-ui -->
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/custom-script.js"></script>
 
- 
+
 </body>
 
 </html>

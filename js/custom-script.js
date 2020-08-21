@@ -1,18 +1,18 @@
-jQuery(document).ready(function($) {
+jQuery(document).ready(function ($) {
     'use strict';
 
     /* menu js **/
 
     if ($(".dropdown-menu a.dropdown-toggle").length) {
 
-        $('.dropdown-menu a.dropdown-toggle').on('click', function(e) {
+        $('.dropdown-menu a.dropdown-toggle').on('click', function (e) {
             if (!$(this).next().hasClass('show')) {
                 $(this).parents('.dropdown-menu').first().find('.show').removeClass("show");
             }
             var $subMenu = $(this).next(".dropdown-menu");
             $subMenu.toggleClass('show');
 
-            $(this).parents('li.nav-item.dropdown.show').on('hidden.bs.dropdown', function(e) {
+            $(this).parents('li.nav-item.dropdown.show').on('hidden.bs.dropdown', function (e) {
                 $('.dropdown-submenu .show').removeClass("show");
             });
 
@@ -24,7 +24,7 @@ jQuery(document).ready(function($) {
 
     if ($('.header-transparent').length) {
 
-        $(window).scroll(function() {
+        $(window).scroll(function () {
             if ($(".header-transparent").offset().top > 200) {
                 $(".header-transparent").addClass("header-collapse");
             } else {
@@ -37,9 +37,12 @@ jQuery(document).ready(function($) {
 
     /* Calender jQuery **/
 
-    if ($("#weddingdate, #taskdate").length) {
+    if ($("#weddingdate, #taskdate, #startdate").length) {
 
-        $("#weddingdate, #taskdate").datepicker({ minDate: "+1", maxDate: "+1Y +3M" });
+        $("#weddingdate, #taskdate, #startdate").datepicker({
+            minDate: "+1",
+            maxDate: "+1Y +3M"
+        });
         $('#ui-datepicker-div').before('<div class="default-skin"></div>');
         $('#ui-datepicker-div').appendTo('.default-skin').contents();
     }
@@ -49,7 +52,7 @@ jQuery(document).ready(function($) {
     if ($('select').length) {
 
 
-        $(document).ready(function() {
+        $(document).ready(function () {
             $('select').niceSelect();
             FastClick.attach(document.body);
         });
@@ -245,13 +248,13 @@ jQuery(document).ready(function($) {
 
     if ($('.collapse').length) {
 
-        $('.collapse').on('shown.bs.collapse', function() {
+        $('.collapse').on('shown.bs.collapse', function () {
             $(this).parent().find(".fa-plus").removeClass("fa-plus").addClass("fa-minus");
-        }).on('hidden.bs.collapse', function() {
+        }).on('hidden.bs.collapse', function () {
             $(this).parent().find(".fa-minus").removeClass("fa-minus").addClass("fa-plus");
         });
 
-        $('.panel-heading a').click(function() {
+        $('.panel-heading a').click(function () {
             $('.panel-heading').removeClass('active');
 
             //If the panel was open and would be closed by this click, do not active it
@@ -263,10 +266,10 @@ jQuery(document).ready(function($) {
     /* dashboard side menu show and open jQuery  **/
     if ($('#icon-toggle').length) {
 
-        $(function() {
+        $(function () {
             var plus = $('#icon-toggle');
             var btn = $('button')
-            $("button").click(function() {
+            $("button").click(function () {
                 plus.toggleClass("fa fa-times fa fa-bars");
             });
         });
@@ -296,7 +299,7 @@ jQuery(document).ready(function($) {
     /* dashboard summernote jQuery  **/
     if ($('#summernote').length) {
 
-        $(document).ready(function() {
+        $(document).ready(function () {
             $('#summernote').summernote({
                 height: 300
 
@@ -308,25 +311,25 @@ jQuery(document).ready(function($) {
     }
 
 
-    
-if ($('.notification-list').length) {
 
-     $('.notification-list').slimScroll({
+    if ($('.notification-list').length) {
+
+        $('.notification-list').slimScroll({
             height: '250px'
         });
-}
-/*--- accordion js (plus-minus) ----*/
+    }
+    /*--- accordion js (plus-minus) ----*/
 
     if ($('.collapse').length) {
 
 
-        $('.collapse').on('shown.bs.collapse', function() {
+        $('.collapse').on('shown.bs.collapse', function () {
             $(this).parent().find(".fa-plus-circle").removeClass("fa-plus-circle").addClass("fa-minus-circle");
-        }).on('hidden.bs.collapse', function() {
+        }).on('hidden.bs.collapse', function () {
             $(this).parent().find(".fa-minus-circle").removeClass("fa-minus-circle").addClass("fa-plus-circle");
         });
 
-        $('.card-header a').click(function() {
+        $('.card-header a').click(function () {
             $('.card-header').removeClass('active');
 
             //If the panel was open and would be closed by this click, do not active it
@@ -343,13 +346,13 @@ if ($('.notification-list').length) {
 
     if ($('.collapse').length) {
 
-        $('.collapse').on('shown.bs.collapse', function() {
+        $('.collapse').on('shown.bs.collapse', function () {
             $(this).parent().find(".fa-chevron-circle-down").removeClass("fa-chevron-circle-down").addClass("fa-chevron-circle-up");
-        }).on('hidden.bs.collapse', function() {
+        }).on('hidden.bs.collapse', function () {
             $(this).parent().find(".fa-chevron-circle-up").removeClass("fa-chevron-circle-up").addClass("fa-chevron-circle-down");
         });
 
-        $('.card-header a').click(function() {
+        $('.card-header a').click(function () {
             $('.card-header').removeClass('active');
 
             //If the panel was open and would be closed by this click, do not active it
@@ -367,13 +370,13 @@ if ($('.notification-list').length) {
     if ($('.collapse').length) {
 
 
-        $('.collapse').on('shown.bs.collapse', function() {
+        $('.collapse').on('shown.bs.collapse', function () {
             $(this).parent().find(".fa-angle-down").removeClass("fa-angle-down").addClass("fa-angle-up");
-        }).on('hidden.bs.collapse', function() {
+        }).on('hidden.bs.collapse', function () {
             $(this).parent().find(".fa-angle-up").removeClass("fa-angle-up").addClass("fa-angle-down");
         });
 
-        $('.card-header a').click(function() {
+        $('.card-header a').click(function () {
             $('.card-header').removeClass('active');
 
             //If the panel was open and would be closed by this click, do not active it
