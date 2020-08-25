@@ -6020,7 +6020,7 @@ sup {
 }
 
 .accordion-card-header a:hover {
-    color: #ff4d4d;
+    color: #d4b97f;
 }
 
 .accordion-card-header span {
@@ -8215,12 +8215,13 @@ ul.comment-list:last-child {
 .dashboard-sidebar {
     background-color: #ffffff;
     box-shadow: 0 0 1px 0 rgb(198, 198, 198, 0.85);
-    margin-bottom: 50px;
+    margin-bottom: 100px;
     position: fixed;
     bottom: 0px;
     height: 100%;
     width: 276px;
     top: 69px;
+    overflow-y: auto;
 }
 
 .dashboard-toggler .navbar-toggler {
@@ -8235,7 +8236,7 @@ ul.comment-list:last-child {
 }
 
 .dashboard-nav {
-    padding: 10px 24px 24px 24px;
+    padding: 10px 24px 80px 24px;
 }
 
 .dashboard-nav ul {

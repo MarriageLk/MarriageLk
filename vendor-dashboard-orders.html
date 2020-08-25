@@ -154,8 +154,8 @@
                         <div class="dashboard-page-header">
                             <div class="row">
                                 <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-                                    <h3 class="dashboard-page-title">Request List</h3>
-                                    <p>Check your request quote.</p>
+                                    <h3 class="dashboard-page-title">Received Orders List</h3>
+                                    <p>Check your orders.</p>
                                 </div>
                             </div>
                         </div>
@@ -173,6 +173,163 @@
                             </div>
                         </div>
 
+                        <div class="card request-list-table table-responsive">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>Name</th>
+                                        <th>Wedding Date</th>
+                                        <th>Order Number</th>
+                                        <th>Package</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="requester-name">Jessica J. Titus</td>
+                                        <td class="wedding-date">26/10/2020</td>
+                                        <td class="requester-id">MARRIAGE01</td>
+                                        <td class="requester-id">Basic</td>
+                                        <td class="requester-action">
+                                            <a href="#" class="btn btn-outline-pink btn-xs m-1" data-toggle="modal" data-target="#viewQuote">View</a>
+
+
+                                    </tr>
+                                    <tr>
+                                        <td class="requester-name">Anita Parmar</td>
+                                        <td class="wedding-date">26/11/2020</td>
+                                        <td class="requester-id">MARRIAGE02</td>
+                                        <td class="requester-phone">111111111</td>
+                                        <td class="requester-action">
+                                            <a href="#" class="btn btn-outline-pink btn-xs m-1" data-toggle="modal" data-target="#viewQuote">View</a>
+
+
+                                    </tr>
+                                    <tr>
+                                        <td class="requester-name">Kim R. Wiley</td>
+                                        <td class="wedding-date">26/12/2020</td>
+                                        <td class="requester-id">MARRIAGE03</td>
+                                        <td class="requester-phone">22222222</td>
+                                        <td class="requester-action">
+                                            <a href="#" class="btn btn-outline-pink btn-xs m-1" data-toggle="modal" data-target="#viewQuote">View</a>
+
+
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="viewQuote" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLongTitle">View Order</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="">
+                                                <form>
+                                                    <!-- Form Name -->
+                                                    <div class="venue-form-info card-body">
+                                                        <div class="row">
+
+                                                            <!-- Text input-->
+                                                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                                                <div class="form-group">
+                                                                    <label class="control-label" for="title">#Order Number</label>
+                                                                    <input id="ordernumber" name="ordernumber" type="text" placeholder="Order Number" class="form-control " disabled>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                                                                <div class="form-group">
+                                                                    <label class="control-label" for="title">Title</label>
+                                                                    <input id="title" name="title" type="text" placeholder="Title" class="form-control " disabled>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                                                                <div class="form-group">
+                                                                    <label class="control-label">Wedding Date</label>
+                                                                    <input id="date" name="date" type="text" placeholder="Date" class="form-control " disabled>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                                                                <div class="form-group">
+                                                                    <label class="control-label">Email </label>
+                                                                    <input id="email" name="email" type="text" placeholder="Email" class="form-control " disabled>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                                                                <div class="form-group">
+                                                                    <label class="control-label">Phone</label>
+                                                                    <input id="phone" name="phone" type="text" placeholder="Phone" class="form-control" disabled>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                                                                <div class="form-group">
+                                                                    <label class="control-label">Package</label>
+                                                                    <input id="package" name="package" type="text" placeholder="Package" class="form-control" disabled>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                                                                <div class="form-group">
+                                                                    <label class="control-label">Price</label>
+                                                                    <input id="price" name="price" type="number" placeholder="Price" class="form-control" disabled>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                                                <div class="form-group">
+                                                                    <label class="control-label">Message </label>
+                                                                    <input id="message" name="message" type="text" placeholder="Message" class="form-control " disabled>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Modal -->
+                            <div class="modal fade" id="delete" tabindex="-1" role="dialog" aria-labelledby="delete" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Delete</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>Are you sure want to delete?</p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-danger">Delete</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="row pt-5">
+                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                        <div class="dashboard-page-header">
+                            <div class="row">
+                                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                    <h3 class="dashboard-page-title">Your Orders</h3>
+                                    <p>Check your orders.</p>
+                                </div>
+                            </div>
+                        </div>
                         <div class="card request-list-table table-responsive">
                             <table class="table">
                                 <thead>
