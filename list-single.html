@@ -127,7 +127,7 @@
                         <div class="vendor-head text-xl-right">
                             <a href="#" class="btn-default-wishlist"><span class="">Wall</span></a>
                             <a href="#" class="btn-default-wishlist"><i class="fa fa-heart"></i> <span class="">Add To Wishlist</span></a>
-                            <a href="#" class="btn-default-wishlist"><i class="fas fa-envelope"></i><span class="">Message</span></a>
+                            <a href="#" class="btn-default-wishlist" data-toggle="modal" data-target="#message"><i class="fas fa-envelope"></i><span class="">Message</span></a>
                         </div>
                     </div>
                 </div>
@@ -648,8 +648,8 @@
                                         <!-- Textarea -->
                                         <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                                             <div class="form-group">
-                                                <label class="control-label sr-only" for="comments">Comment</label>
-                                                <textarea class="form-control" id="comments" name="comments" rows="5" placeholder="Write Comment"></textarea>
+                                                <label class="control-label sr-only" for="comments">Message</label>
+                                                <textarea class="form-control" id="no" name="comments" rows="5" placeholder="Write Note"></textarea>
                                             </div>
                                         </div>
                                         <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
@@ -826,6 +826,31 @@
                         </div>
                     </div>
                     <!-- /.Vendor thumbnail -->
+                </div>
+            </div>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="message" tabindex="-1" role="dialog" aria-labelledby="message" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">New Message</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                            <div class="form-group">
+                                <label class="control-label">Message</label>
+                                <textarea class="form-control" id="no" name="newmessage" rows="5" placeholder="Type your Message"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Send</button>
+                    </div>
                 </div>
             </div>
         </div>
