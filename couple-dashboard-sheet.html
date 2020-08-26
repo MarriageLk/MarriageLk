@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Marriage.lk | Vendor Dashboard - Request List</title>
+    <title>Marriage.lk | Dashboard - Wedding Planning Sheet</title>
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <!-- Google Fonts -->
@@ -97,7 +97,7 @@
                                         <a class="dropdown-item" href="vendor-dashboard-overview.html">Dashboard</a>
                                         <a class="dropdown-item" href="vendor-dashboard-notification.html">Notification</a>
                                         <a class="dropdown-item" href="couple-dashboard-mywishlist.html">My Wishlist</a>
-                                        <a class="dropdown-item" href="couple-dashboard-todolist.html">To Do List</a>
+                                        <a class="dropdown-item" href="couple-dashboard-dotolist.html">To Do List</a>
                                         <a class="dropdown-item" href="couple-dashboard-mywishlist.html">Budget</a>
                                         <a class="dropdown-item" href="couple-dashboard-sheet.html">Wedding Planning Sheet</a>
                                         <a class="dropdown-item" href="vendor-dashboard-orders.html">Orders</a>
@@ -140,7 +140,7 @@
                     <li><a href="couple-dashboard-budget.html"><span class="dash-nav-icon"><i class="fas fa-calculator"></i></span>Budget</a></li>
                     <li><a href="vendor-dashboard-notification.html"><span class="dash-nav-icon"><i class="fa fa-bell" aria-hidden="true"></i>
                             </span>Notifications</a></li>
-                    <li><a href="couple-dashboard-sheet.html"><span class="dash-nav-icon"><i class="far fa-sticky-note"></i>
+                    <li class="active"><a href="couple-dashboard-sheet.html"><span class="dash-nav-icon"><i class="far fa-sticky-note"></i>
                             </span>Wedding Sheet</a></li>
                     <li><a href="vendor-dashboard-orders.html"><span class="dash-nav-icon"><i class="fas fa-sort-amount-up"></i>
                             </span>Orders</a></li>
@@ -152,7 +152,7 @@
                             </span> Posts </a>
                     <li><a href="vendor-dashboard-listing.html"><span class="dash-nav-icon"><i class="fas fa-list-alt"></i> </span> My Listed Item </a>
                     <li><a href="vendor-dashboard-pricing.html"><span class="dash-nav-icon"><i class="fas fa-calculator"></i></span>Pricing Plan</a></li>
-                    <li class="active"><a href="vendor-dashboard-request-quote.html"><span class="dash-nav-icon"><i class="fas fa-edit"></i></span>Request Quotes</a></li>
+                    <li><a href="vendor-dashboard-request-quote.html"><span class="dash-nav-icon"><i class="fas fa-edit"></i></span>Request Quotes</a></li>
                     <li><a href="vendor-dashboard-reviews.html"><span class="dash-nav-icon"><i class="fas fa-comments"></i></span>Reviews </a></li>
                     <li><a href="vendor-dashboard-profile.html"><span class="dash-nav-icon"><i class="fas fa-user-circle"></i></span>My Profile </a></li>
                     <li><a href="index.html"><span class="dash-nav-icon"><i class="fas fa-sign-out-alt"></i></span>Logout </a></li>
@@ -166,65 +166,69 @@
                         <div class="dashboard-page-header">
                             <div class="row">
                                 <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-                                    <h3 class="dashboard-page-title">Request List</h3>
-                                    <p>Check your request quote.</p>
+                                    <h3 class="dashboard-page-title">Wedding Sheet</h3>
+                                    <p>Check your Plannings.</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="dashboard-filter-row mb20">
-                            <div class="row">
-                                <div class="col-xl-3">
-                                    <select class="form-control wide" id="exampleFormControlSelect1">
-                                        <option>Select Your Listing</option>
-                                        <option>Select Your Listing #1</option>
-                                        <option>Select Your Listing #2</option>
-                                        <option>Select Your Listing #3</option>
-                                        <option>Select Your Listing #4</option>
-                                    </select>
-                                </div>
-                            </div>
-                        </div>
-
                         <div class="card request-list-table table-responsive">
                             <table class="table">
                                 <thead>
                                     <tr>
-                                        <th>Name</th>
-                                        <th>Wedding Date</th>
-                                        <th>Email</th>
+                                        <th>Service Name</th>
+                                        <th>Order Date</th>
+                                        <th>Vendor Type</th>
                                         <th>Package</th>
+                                        <th>Price</th>
+                                        <th>Paid</th>
+                                        <th>Pending</th>
                                         <th>Action</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td class="requester-name">Jessica J. Titus</td>
+                                        <td class="requester-name"><a href="#">Vendor Service Name</a></td>
                                         <td class="wedding-date">26/10/2020</td>
-                                        <td class="requester-id">jessicatitus@gmail.com</td>
+                                        <td class="requester-id">Photography</td>
+                                        <td class="requester-id">Basic</td>
+                                        <td class="requester-id">Basic</td>
+                                        <td class="requester-id">Basic</td>
                                         <td class="requester-id">Basic</td>
                                         <td class="requester-action">
                                             <a href="#" class="btn btn-outline-pink btn-xs m-1" data-toggle="modal" data-target="#viewQuote">View</a>
-                                            <a href="#" class="btn btn-outline-pink btn-xs" data-toggle="modal" data-target="#delete">delete</a></td>
+                                            <a href="#" class="btn btn-outline-pink btn-xs m-1" data-toggle="modal" data-target="#pay">Pay</a>
+                                            <a href="#" class="btn btn-outline-pink btn-xs m-1" data-toggle="modal" data-target="#delete">Delete</a>
+
 
                                     </tr>
                                     <tr>
-                                        <td class="requester-name">Anita Parmar</td>
+                                        <td class="requester-name"><a href="#">Vendor Service Name</a></td>
                                         <td class="wedding-date">26/11/2020</td>
-                                        <td class="requester-id">anita@gmail.com</td>
+                                        <td class="requester-id">Photography</td>
+                                        <td class="requester-phone">111111111</td>
+                                        <td class="requester-phone">111111111</td>
+                                        <td class="requester-phone">111111111</td>
                                         <td class="requester-phone">111111111</td>
                                         <td class="requester-action">
                                             <a href="#" class="btn btn-outline-pink btn-xs m-1" data-toggle="modal" data-target="#viewQuote">View</a>
-                                            <a href="#" class="btn btn-outline-pink btn-xs" data-toggle="modal" data-target="#delete">delete</a></td>
+                                            <a href="#" class="btn btn-outline-pink btn-xs m-1" data-toggle="modal" data-target="#pay">Pay</a>
+                                            <a href="#" class="btn btn-outline-pink btn-xs m-1" data-toggle="modal" data-target="#delete">Delete</a>
+
 
                                     </tr>
                                     <tr>
-                                        <td class="requester-name">Kim R. Wiley</td>
+                                        <td class="requester-name"><a href="#">Vendor Service Name</a></td>
                                         <td class="wedding-date">26/12/2020</td>
-                                        <td class="requester-id">kim@gmail.com</td>
+                                        <td class="requester-id">Photography</td>
+                                        <td class="requester-phone">22222222</td>
+                                        <td class="requester-phone">22222222</td>
+                                        <td class="requester-phone">22222222</td>
                                         <td class="requester-phone">22222222</td>
                                         <td class="requester-action">
                                             <a href="#" class="btn btn-outline-pink btn-xs m-1" data-toggle="modal" data-target="#viewQuote">View</a>
-                                            <a href="#" class="btn btn-outline-pink btn-xs" data-toggle="modal" data-target="#delete">delete</a></td>
+                                            <a href="#" class="btn btn-outline-pink btn-xs m-1" data-toggle="modal" data-target="#pay">Pay</a>
+                                            <a href="#" class="btn btn-outline-pink btn-xs m-1" data-toggle="modal" data-target="#delete">Delete</a>
+
 
                                     </tr>
                                 </tbody>
@@ -235,7 +239,7 @@
                                 <div class="modal-dialog modal-dialog-centered" role="document">
                                     <div class="modal-content">
                                         <div class="modal-header">
-                                            <h5 class="modal-title" id="exampleModalLongTitle">View Quote</h5>
+                                            <h5 class="modal-title" id="exampleModalLongTitle">View Order</h5>
                                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                                 <span aria-hidden="true">&times;</span>
                                             </button>
@@ -248,13 +252,18 @@
                                                         <div class="row">
 
                                                             <!-- Text input-->
-                                                            <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                                                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                                                                 <div class="form-group">
-                                                                    <label class="control-label" for="title">Title</label>
-                                                                    <input id="title" name="title" type="text" placeholder="Title" class="form-control " disabled>
+                                                                    <label class="control-label" for="title">#Order Number</label>
+                                                                    <input id="ordernumber" name="ordernumber" type="text" placeholder="Order Number" class="form-control " disabled>
                                                                 </div>
                                                             </div>
-
+                                                            <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                                                                <div class="form-group">
+                                                                    <label class="control-label" for="title">Vendor Name</label>
+                                                                    <input id="vendorname" name="vendorname" type="text" placeholder="Vendor Name" class="form-control " disabled>
+                                                                </div>
+                                                            </div>
                                                             <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
                                                                 <div class="form-group">
                                                                     <label class="control-label">Wedding Date</label>
@@ -263,13 +272,13 @@
                                                             </div>
                                                             <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
                                                                 <div class="form-group">
-                                                                    <label class="control-label">Email </label>
+                                                                    <label class="control-label">Vendor Email </label>
                                                                     <input id="email" name="email" type="text" placeholder="Email" class="form-control " disabled>
                                                                 </div>
                                                             </div>
                                                             <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
                                                                 <div class="form-group">
-                                                                    <label class="control-label">Phone</label>
+                                                                    <label class="control-label">Vendor Phone</label>
                                                                     <input id="phone" name="phone" type="text" placeholder="Phone" class="form-control" disabled>
                                                                 </div>
                                                             </div>
@@ -282,12 +291,12 @@
                                                             <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
                                                                 <div class="form-group">
                                                                     <label class="control-label">Price</label>
-                                                                    <input id="price" name="price" type="number" placeholder="Price" class="form-control">
+                                                                    <input id="price" name="price" type="number" placeholder="Price" class="form-control" disabled>
                                                                 </div>
                                                             </div>
                                                             <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                                                                 <div class="form-group">
-                                                                    <label class="control-label">Message </label>
+                                                                    <label class="control-label"> Your Notes </label>
                                                                     <input id="message" name="message" type="text" placeholder="Message" class="form-control " disabled>
                                                                 </div>
                                                             </div>
@@ -297,8 +306,8 @@
                                             </div>
                                         </div>
                                         <div class="modal-footer">
-                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                            <button type="button" class="btn btn-default">Accept</button>
+                                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+
                                         </div>
                                     </div>
                                 </div>
@@ -319,6 +328,54 @@
                                         <div class="modal-footer">
                                             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                                             <button type="button" class="btn btn-danger">Delete</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="pay" tabindex="-1" role="dialog" aria-labelledby="pay" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Payment History</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="table-responsive">
+                                                <table class="table">
+                                                    <thead>
+                                                        <tr>
+                                                            <th class="wedding-budget-event">Date</th>
+                                                            <th class="wedding-budget-actual">Price</th>
+                                                            <th class="wedding-budget-paid">Paid</th>
+                                                            <th class="wedding-budget-pending">Pending</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>26/10/2020</td>
+                                                            <td class="estimate-total"><span class="total-amount"> $200</span></td>
+                                                            <td class="paid-total"><span class="total-amount">$0</span></td>
+                                                            <td class="pending-total"><span class="total-amount">$0</span></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>26/10/2020</td>
+                                                            <td class="estimate-total"><span class="total-amount"> $200</span></td>
+                                                            <td class="paid-total"><span class="total-amount">$0</span></td>
+                                                            <td class="pending-total"><span class="total-amount">$0</span></td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <input id="amount" name="amount" type="text" placeholder="Amount" class="form-control">
+                                            <button type="submit" class="btn btn-danger">Pay</button>
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
                                         </div>
                                     </div>
                                 </div>
