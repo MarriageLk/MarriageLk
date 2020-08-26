@@ -2605,11 +2605,18 @@ img.grayscale:hover {
     min-height: 340px;
 }
 
+.page-header-gallery {
+    border-bottom: transparent;
+    background: url(../images/gallery-header.jpg) no-repeat center;
+    background-size: cover;
+    min-height: 340px;
+}
+
 .page-header-blog {
-    /*border-bottom: transparent;
+    border-bottom: transparent;
     background: url(../images/blog-header.jpg) no-repeat center;
     background-size: cover;
-    min-height: 340px;*/
+    min-height: 340px;
 }
 
 .page-breadcrumb {
